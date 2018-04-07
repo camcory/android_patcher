@@ -1,0 +1,18 @@
+From b1ab41afc635abe15965bdace92bf5d351b4acc7 Mon Sep 17 00:00:00 2001
+From: Luca Stefani <luca.stefani.ge1@gmail.com>
+Date: Mon, 05 Mar 2018 21:45:52 -0500
+Subject: [PATCH] Remove duplicated genfscon
+
+Change-Id: Ia16d0b6eeff1eccb25b4be4038018d70cd746e05
+Signed-off-by: Brett Montague <bmontagu@gmail.com>
+---
+
+diff --git a/common/private/genfs_contexts b/common/private/genfs_contexts
+index 72579a3..6210791 100644
+--- a/common/private/genfs_contexts
++++ b/common/private/genfs_contexts
+@@ -1,4 +1,2 @@
+-genfscon exfat / u:object_r:vfat:s0
+-genfscon fuseblk / u:object_r:fuse:s0
+ genfscon ntfs / u:object_r:vfat:s0
+ genfscon sdfat / u:object_r:vfat:s0

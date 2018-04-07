@@ -1,0 +1,24 @@
+From 650844a7e42360f48581a8ae532410efeedf1545 Mon Sep 17 00:00:00 2001
+From: Josh <joshfox87@gmail.com>
+Date: Wed, 28 Mar 2018 08:44:14 -0400
+Subject: [PATCH] Revert "create dummy hidl shared lib to avoid compilation failure"
+
+This reverts commit f362b9ddafab8b4a8d8fc8275881d78769a1f1ff.
+
+Change-Id: Ic99f50c62057c01d083fa09803727d1fa9fffd31
+---
+
+diff --git a/transport/base/1.0/Android.bp b/transport/base/1.0/Android.bp
+index 90e118e..8382824 100644
+--- a/transport/base/1.0/Android.bp
++++ b/transport/base/1.0/Android.bp
+@@ -39,9 +39,4 @@
+     ],
+ }
+ 
+-cc_library_shared {
+-    name: "android.hidl.base@1.0",
+-    srcs: [],
+-}
+-
+ // android.hidl.base@1.0 is exported from libhidltransport
