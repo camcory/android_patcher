@@ -1,6 +1,7 @@
 ROOT="${PWD}"
 REPOSITORIES=(
-    'build/make'
+    'external/selinux'
+    'frameworks/native'
     'system/core'
     'system/vold'
 )
@@ -8,7 +9,7 @@ REPOSITORIES=(
 for repository in "${REPOSITORIES[@]}"; do
     cd "${ROOT}/${repository}"
 
-    git am --keep-cr "${ROOT}/patcher/patches/${repository}"/*
+    git am --keep-cr "${ROOT}/patches/${repository}"/*
 
     cd "${ROOT}"
 done
