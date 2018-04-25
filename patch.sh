@@ -1,6 +1,7 @@
 ROOT="${PWD}"
 REPOSITORIES=(
     'frameworks/native'
+    'frameworks/opt/telephony'
     'system/sepolicy'
 )
 
