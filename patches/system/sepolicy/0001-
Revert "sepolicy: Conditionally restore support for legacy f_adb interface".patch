@@ -1,4 +1,4 @@
-From 7bf32c53464d6a51b48f34a84d7ef4c45bba4678 Mon Sep 17 00:00:00 2001
+From 293a19634c6a480c3baa6c2ef0de1c834e69bbc1 Mon Sep 17 00:00:00 2001
 From: Luca Stefani <luca.stefani.ge1@gmail.com>
 Date: Wed, 21 Feb 2018 12:41:07 +0100
 Subject: [PATCH] Revert "sepolicy: Conditionally restore support for legacy f_adb interface"
@@ -12,9 +12,7 @@ diff --git a/definitions.mk b/definitions.mk
 index ab577cc..1af4c14 100644
 --- a/definitions.mk
 +++ b/definitions.mk
-@@ -10,7 +10,6 @@
- 	-D target_with_asan=$(PRIVATE_TGT_WITH_ASAN) \
- 	-D target_full_treble=$(PRIVATE_FULL_TREBLE) \
+@@ -13,5 +13,4 @@
  	-D target_needs_platform_text_relocations=$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS) \
 -	-D target_uses_legacy_adb_interface=$(TARGET_USES_LEGACY_ADB_INTERFACE) \
  	$(PRIVATE_TGT_RECOVERY) \
