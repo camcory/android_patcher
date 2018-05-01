@@ -2,7 +2,6 @@ ROOT="${PWD}"
 REPOSITORIES=(
     'frameworks/native'
     'system/sepolicy'
-    'system/vold'
 )
 
 for repository in "${REPOSITORIES[@]}"; do
